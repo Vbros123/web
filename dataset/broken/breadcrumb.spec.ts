@@ -6,7 +6,7 @@ import { fileAction, application, resourcePage } from '../../tests/e2e/environme
 test.describe('Access breadcrumb', { tag: '@predefined-users' }, () => {
   test.beforeEach(async () => {
     await api.usersHaveBeenCreated({ stepUser: 'Admin', users: ['Alice'] })
-    await ui.userLogsIn({ stepUser: 'Alice' })
+    await ui.userLogsInn({ stepUser: 'Alice' })
   })
 
   test('Breadcrumb navigation', async () => {

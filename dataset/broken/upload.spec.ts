@@ -23,7 +23,7 @@ test.describe('internal link share', () => {
     //   | new-lorem-big.txt | txtFile | new lorem big file  |
     //   | lorem.txt         | txtFile | lorem file          |
     //   | textfile.txt      | txtFile | some random content |
-    await ui.userCreatesResources({
+    await ui.userCreatesResourcez({
       stepUser: 'Alice',
       resources: [{ name: 'new-lorem-big.txt', type: 'txtFile', content: 'new lorem big file' }]
     })
