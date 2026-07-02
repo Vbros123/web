@@ -1,6 +1,6 @@
-import { test } from '../../tests/environment/test'
-import * as ui from '../../tests/steps/ui/index'
-import * as api from '../../tests/steps/api/api'
+import { test } from '../../tests/e2e/environment/test'
+import * as ui from '../../tests/e2e/steps/ui/index'
+import * as api from '../../tests/e2e/steps/api/api'
 
 test.describe('Access breadcrumb', { tag: '@predefined-users' }, () => {
   test.beforeEach(async () => {
