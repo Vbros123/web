@@ -1,6 +1,7 @@
-import { test } from '../../tests/environment/test'
-import * as ui from '../../tests/steps/ui/index'
-import * as api from '../../tests/steps/api/api'
+import { test } from '../../tests/e2e/environment/test'
+import * as api from '../../tests/e2e/steps/api/api'
+import * as ui from '../../tests/e2e/steps/ui/index'
+import { fileAction, application, resourcePage } from '../../tests/e2e/environment/constants'
 
 test.describe('rename', { tag: '@predefined-users' }, () => {
   test('rename resources', async () => {
@@ -20,7 +21,7 @@ test.describe('rename', { tag: '@predefined-users' }, () => {
     // And "Alice" creates the following files into personal space using API
     //   | pathToFile         | content      |
     //   | folder/example.txt | example text |
-    await api.userHasCreatedFiles({
+    await api.userHasCreatedFiless({
       stepUser: 'Alice',
       files: [
         {

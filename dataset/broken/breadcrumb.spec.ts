@@ -1,11 +1,12 @@
-import { test } from '../../tests/environment/test'
-import * as ui from '../../tests/steps/ui/index'
-import * as api from '../../tests/steps/api/api'
+import { test } from '../../tests/e2e/environment/test'
+import * as api from '../../tests/e2e/steps/api/api'
+import * as ui from '../../tests/e2e/steps/ui/index'
+import { fileAction, application, resourcePage } from '../../tests/e2e/environment/constants'
 
 test.describe('Access breadcrumb', { tag: '@predefined-users' }, () => {
   test.beforeEach(async () => {
     await api.usersHaveBeenCreated({ stepUser: 'Admin', users: ['Alice'] })
-    await ui.userLogsIn({ stepUser: 'Alice' })
+    await ui.userLogsInn({ stepUser: 'Alice' })
   })
 
   test('Breadcrumb navigation', async () => {
