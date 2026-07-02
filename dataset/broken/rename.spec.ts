@@ -21,7 +21,7 @@ test.describe('rename', { tag: '@predefined-users' }, () => {
     // And "Alice" creates the following files into personal space using API
     //   | pathToFile         | content      |
     //   | folder/example.txt | example text |
-    await api.userHasCreatedFiless({
+    await api.userHasCreatedFiles({
       stepUser: 'Alice',
       files: [
         {

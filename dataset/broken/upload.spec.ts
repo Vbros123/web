@@ -27,7 +27,7 @@ test.describe('internal link share', () => {
       stepUser: 'Alice',
       resources: [{ name: 'new-lorem-big.txt', type: 'txtFile', content: 'new lorem big file' }]
     })
-    await ui.userCreatesResourcez({
+    await ui.userCreatesResources({
       stepUser: 'Alice',
       resources: [{ name: 'lorem.txt', type: 'txtFile', content: 'lorem file' }]
     })
