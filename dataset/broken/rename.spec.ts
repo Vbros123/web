@@ -1,6 +1,6 @@
-import { test } from '../../../tests/environment/test'
-import * as ui from '../../../tests/steps/ui/index'
-import * as api from '../../../tests/steps/api/api'
+import { test } from '../../tests/environment/test'
+import * as ui from '../../tests/steps/ui/index'
+import * as api from '../../tests/steps/api/api'
 
 test.describe('rename', { tag: '@predefined-users' }, () => {
   test('rename resources', async () => {
